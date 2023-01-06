@@ -37,7 +37,7 @@ export const CarForm = (props:carFormProps) => {
       setTimeout( () => {window.location.reload()}, 1000);
       event.target.reset();
     } else {
-      dispatch(chooseName(data));
+      dispatch(chooseName(data.name));
       dispatch(chooseModel(data.model));
       dispatch(chooseYear(data.year));
       dispatch(choosePrice(data.price));
